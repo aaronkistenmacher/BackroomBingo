@@ -1,0 +1,40 @@
+.Container {
+  outline: 1px solid #262223;
+  flex: 1 0 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.CheckedIndicator-Checked {
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.25s linear,
+              color 0.25s linear;
+  text-overflow: ellipsis;
+  background-image: url("./quality-control-stamp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.CheckedIndicator-NotChecked {
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: #faf4ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #262223;
+  transition: background-color 0.25s linear,
+              color 0.25s linear;
+  text-overflow: ellipsis;
+}
